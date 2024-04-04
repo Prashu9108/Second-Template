@@ -3,250 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template1</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>forms</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container{
+            display: flex;
+            min-height: 80vh;
+            box-shadow: 0px 0px 10px #d1d1d1;
+        }
+        .left{
+            background-color: rgb(255, 107, 39);
+            flex: 1;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            
+        }
+        .right{
+            background-color: rgb(255, 255, 255);
+            flex:2;
+            padding: 5%;
+        }
+        .left img{
+            width: 200px;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .left h1{
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        .left p{
+            line-height: 1.5;
+            /* font-size: 20px; */
+        }
+        .name{
+            display: flex;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .name input{
+            flex: 1;
+            padding: 15px;
+            outline: none;
+            border: none;
+            font-size: 20px;
+            border-bottom: 2px solid #d8d8d8;
+            color: #4e4e4e;
+        }
+        .name input::placeholder{
+            color: #d8d8d8;
+        }
+        .btn{
+            margin-top: 40px;
+            
+        }
+        .btn button{
+            float: right;
+            border: none;
+            padding: 15px;
+            font-size: 18px;
+            min-width: 200px;
+            background-color: #1690f3;
+            color: #fff;
+            border-radius: 3px;
+        }
+
+    </style>
 </head>
 <body>
-    <nav>
-        <h1>Spider</h1>
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Contact</li>
-            <li>Projects</li>
-        </ul>
-        <button class="outline-btn">Sign up</button>
+    <div class="container">
 
-    </nav>
-    <div class="hero">
-        <div class="hero-text">
-            <h1 class="heading">The Keenest Blockchain data platform</h1>
-            <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam velit quasi voluptate sed commodi, consequuntur quidem deleniti numquam quos alias quia distinctio cupiditate. Doloribus perferendis quia voluptatum quis accusantium vel?</p>
-            <button class="primary-btn">View Price</button>
-
-            <div class="blur1">
-
-            </div>
+        <div class="left">
+            <img src="https://cdn-icons-png.flaticon.com/128/2654/2654572.png" alt="iimage">
+            <h1>Registration</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique perspiciatis, nisi minima non sed fugit sapiente ea doloribus placeat illum, dolores amet molestiae qui nobis, quae maiores deleniti iusto dolorum.</p>
         </div>
-        <div class="hero-image">
 
-            <img src="https://assets-global.website-files.com/6508537e2484292be1210f79/6513e039c4e64d194c163379_hero%20image.png" alt="hero-image">
-
-            <div class="blur2">
-
+        <div class="right">
+            <h1>Please fill with your details</h1>
+           <form>
+            <div class="name">
+                <input type="text" placeholder="First name">
+                <input type="text" placeholder="Second name">
             </div>
+            <div class="name">
+                <input type="email" placeholder="Your Email">
+                <input type="tel" placeholder="Your Telephone">
+            </div>
+            <div class="name">
+                <input type="number" placeholder="Age">
+                <input type="password" placeholder="Password">
+            </div>
+            <div class="btn">
+                <button type="submit">Create Account</button>
+            </div>
+           </form>
         </div>
-    </div>
-    <div class="benifits">
-        <h1 class="baneer-heading">Benifits of using Spider Web</h1>
-        <div class="benifits-card-container">
 
-            <div class="benifit-card">
-                <div class="benifits-card-left">
-                    <div class="benifit-card-icon">
-                        <i class="fa fa-globe"></i>
-                    </div>
-                </div>
-                <div class="benifits-card-right">
-                    <h1 class="card-heading">Scalability</h1>
-                    <p class="card-content">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut deleniti, quis ea soluta explicabo molestiae rem accusantium inventore, ut temporibus sequi vel, nobis aliquid. Sunt architecto explicabo dolores cum suscipit?
-                    </p>
-                </div>
-
-            </div>
-            <div class="benifit-card">
-                <div class="benifits-card-left">
-                    <div class="benifit-card-icon">
-                        <i class="fa fa-globe"></i>
-                    </div>
-                </div>
-                <div class="benifits-card-right">
-                    <h1 class="card-heading">Scalability</h1>
-                    <p class="card-content">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut deleniti, quis ea soluta explicabo molestiae rem accusantium inventore, ut temporibus sequi vel, nobis aliquid. Sunt architecto explicabo dolores cum suscipit?
-                    </p>
-                </div>
-
-            </div>
-            <div class="benifit-card">
-                <div class="benifits-card-left">
-                    <div class="benifit-card-icon">
-                        <i class="fa fa-globe"></i>
-                    </div>
-                </div>
-                <div class="benifits-card-right">
-                    <h1 class="card-heading">Scalability</h1>
-                    <p class="card-content">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut deleniti, quis ea soluta explicabo molestiae rem accusantium inventore, ut temporibus sequi vel, nobis aliquid. Sunt architecto explicabo dolores cum suscipit?
-                    </p>
-                </div>
-
-            </div>
-            <div class="benifit-card">
-                <div class="benifits-card-left">
-                    <div class="benifit-card-icon">
-                        <i class="fa fa-globe"></i>
-                    </div>
-                </div>
-                <div class="benifits-card-right">
-                    <h1 class="card-heading">Scalability</h1>
-                    <p class="card-content">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut deleniti, quis ea soluta explicabo molestiae rem accusantium inventore, ut temporibus sequi vel, nobis aliquid. Sunt architecto explicabo dolores cum suscipit?
-                    </p>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-    <div class="about">
-        <div class="about-text">
-            <h1 class="about-heading">Figures about us</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aspernatur assumenda praesentium necessitatibus quibusdam ipsa provident, optio nulla tempore dolor, dolorem quis perspiciatis. Temporibus expedita alias magnam odio commodi veniam.</p>
-        </div>
-        <div class="about-image">
-            <img src="https://assets-global.website-files.com/6508537e2484292be1210f79/65158090bbd766e5b4f56b7d_about-img.png" alt="">
-
-            <div class="about-numbers">
-                <div class="num-card">
-                    <h1>$260M</h1>
-                    <p>Successful transactions</p>
-                </div>
-                <div class="num-card">
-                    <h1>$260M</h1>
-                    <p>Successful transactions</p>
-                </div>
-                <div class="num-card">
-                    <h1>$260M</h1>
-                    <p>Successful transactions</p>
-                </div>
-                <div class="num-card">
-                    <h1>$260M</h1>
-                    <p>Successful transactions</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="pricing">
-        <div class="pricing-banner">
-            <h1>Get the data insights fast <br> effortless</h1>
-        </div>
-        <div class="pricing-cards-container">
-            <div class="pricing-card">
-               <div class="pricing-card-header">
-                <h4 class="tag">STARTING</h4>
-                <h1>Free</h1>
-                <p>Spider web implements infrastructures for Web3 interoperability</p>
-               </div>
-               <hr>
-               <div class="pricing-card-body">
-                <ul>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    
-                </ul>
-                <button class="signup">Sign up</button>
-               </div>
-            </div>
-
-            <div class="pricing-card">
-                <div class="pricing-card-header">
-                 <h4 class="tag">STARTING</h4>
-                 <h1>Free</h1>
-                 <p>Spider web implements infrastructures for Web3 interoperability</p>
-                </div>
-                <hr>
-                <div class="pricing-card-body">
-                 <ul>
-                     <li>Lorem ipsum dolor sit amet.</li>
-                     <li>Lorem ipsum dolor sit amet.</li>
-                     <li>Lorem ipsum dolor sit amet.</li>
-                     <li>Lorem ipsum dolor sit amet.</li>
-                     
-                 </ul>
-                 <button class="signup">Sign up</button>
-                </div>
-             </div>
-
-             <div class="pricing-card">
-                <div class="pricing-card-header">
-                 <h4 class="tag">STARTING</h4>
-                 <h1>Free</h1>
-                 <p>Spider web implements infrastructures for Web3 interoperability</p>
-                </div>
-                <hr>
-                <div class="pricing-card-body">
-                 <ul>
-                     <li>Lorem ipsum dolor sit amet.</li>
-                     <li>Lorem ipsum dolor sit amet.</li>
-                     <li>Lorem ipsum dolor sit amet.</li>
-                     <li>Lorem ipsum dolor sit amet.</li>
-                     
-                 </ul>
-                 <button class="signup">Sign up</button>
-                </div>
-             </div>
-        </div>
-    </div>
-
-
-    <div class="testimonials">
-        <h1 class="test-banner">Testimonials</h1>
-        <div class="test-card-container">
-            <div class="test-card">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sint odio fugiat incidunt, consequuntur eligendi officia quis odit vitae animi.</p>
-                <div class="test-profile">
-                    <img src="https://media.licdn.com/dms/image/C5103AQGogpVqs0IpDA/profile-displayphoto-shrink_800_800/0/1516833137673?e=2147483647&v=beta&t=thEbFRxp0pxR3WmQTOhPxofKYJOL4oSap48tjd6S6Uw" alt="profile">
-
-                    <div class="profile-right">
-                        <h3>Anna Simonce</h3>
-                        <p>CEO</p>
-                    </div>  
-                </div>
-            </div>
-
-            <div class="test-card">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sint odio fugiat incidunt, consequuntur eligendi officia quis odit vitae animi.</p>
-                <div class="test-profile">
-                    <img src="https://media.licdn.com/dms/image/C5103AQGogpVqs0IpDA/profile-displayphoto-shrink_800_800/0/1516833137673?e=2147483647&v=beta&t=thEbFRxp0pxR3WmQTOhPxofKYJOL4oSap48tjd6S6Uw" alt="profile">
-
-                    <div class="profile-right">
-                        <h3>Anna Simonce</h3>
-                        <p>CEO</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="test-card">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sint odio fugiat incidunt, consequuntur eligendi officia quis odit vitae animi.</p>
-                <div class="test-profile">
-                    <img src="https://media.licdn.com/dms/image/C5103AQGogpVqs0IpDA/profile-displayphoto-shrink_800_800/0/1516833137673?e=2147483647&v=beta&t=thEbFRxp0pxR3WmQTOhPxofKYJOL4oSap48tjd6S6Uw" alt="profile">
-
-                    <div class="profile-right">
-                        <h3>Anna Simonce</h3>
-                        <p>CEO</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="test-card">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sint odio fugiat incidunt, consequuntur eligendi officia quis odit vitae animi.</p>
-                <div class="test-profile">
-                    <img src="https://media.licdn.com/dms/image/C5103AQGogpVqs0IpDA/profile-displayphoto-shrink_800_800/0/1516833137673?e=2147483647&v=beta&t=thEbFRxp0pxR3WmQTOhPxofKYJOL4oSap48tjd6S6Uw" alt="profile">
-
-                    <div class="profile-right">
-                        <h3>Anna Simonce</h3>
-                        <p>CEO</p>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
     
 </body>
